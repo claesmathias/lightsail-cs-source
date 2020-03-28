@@ -19,8 +19,7 @@ services:
       - 27020:27020/udp
       - 26901:26901/udp
     volumes:
-      - /home/centos/lightsail-cs-source/:/data/steam/
-      - /home/centos/lightsail-cs-source/server.cfg:/data/steam/css/cstrike/cfg/server.cfg
+      - /home/centos/lightsail-cs-source/server.cfg:/css/cstrike/cfg/server.cfg
 
   duckdns:
     image: linuxserver/duckdns
