@@ -4,7 +4,7 @@ services:
 
   css-server:
     container_name: css-server
-    image: build: .
+    build: .
     restart: always
     environment:
       - MAP=${CSS_MAP}
