@@ -28,7 +28,7 @@ TZ=Europe/Brussels
 EOF
 
 # set server variables
-cat <<EOF >/home/centos/lightsail-cs-source/server.cfg
+cat <<EOF >/home/centos/lightsail-cs-source/css/cstrike/cfg/server.cfg
 hostname "Counter-Strike Source Server"
 rcon_password "password"
 sv_password "password"
