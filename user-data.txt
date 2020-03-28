@@ -22,6 +22,7 @@ git clone https://github.com/claesmathias/lightsail-cs-source.git
 cat <<EOF >/home/centos/lightsail-cs-source/.env
 DUCKDNS_SUBDOMAINS=subdomain.duckdns.org
 DUCKDNS_TOKEN=duck-dns-token
+TZ=Europe/Brussels
 EOF
 
 # set permissions
