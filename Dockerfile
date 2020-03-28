@@ -17,7 +17,7 @@ RUN apt-get update \
     && chown -R steam /data/steam
 
 # add control script
-ADD css.sh /usr/local/bin/css
+COPY css.sh /usr/local/bin/css
 
 #change user annd working dir
 USER steam
