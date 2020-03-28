@@ -23,7 +23,8 @@ RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.t
 RUN ./steamcmd.sh +login anonymous +force_install_dir /css +app_update 232330 validate +quit
 
 # Add Source Mods
-COPY --chown=steam:steam mods/ /temp
+COPY mods/ /temp
+RUN sudo chown -R steam:steam /temp
 RUN cd /css/cstrike && \
     tar zxvf /temp/mmsource-1.10.6-linux.tar.gz && \
     tar zxvf /temp/sourcemod-1.7.3-git5275-linux.tar.gz && \
