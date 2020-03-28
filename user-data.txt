@@ -22,6 +22,8 @@ git clone https://github.com/claesmathias/lightsail-cs-source.git
 cat <<EOF >/home/centos/lightsail-cs-source/.env
 DUCKDNS_SUBDOMAINS=subdomain.duckdns.org
 DUCKDNS_TOKEN=duck-dns-token
+CSS_MAP=de_dust
+CSS_MAXPLAYERS=16
 TZ=Europe/Brussels
 EOF
 
