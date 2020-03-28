@@ -35,8 +35,8 @@ sv_password "password"
 EOF
 
 # set permissions
-sudo chown -R centos:centos /home/centos/lightsail-cs-source/
 sudo chmod +x /home/centos/lightsail-cs-source/css.sh
+sudo chown -R centos:centos /home/centos/lightsail-cs-source/
 
 # set selinux permissions
 sudo chcon -Rt svirt_sandbox_file_t /home/centos
