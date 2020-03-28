@@ -41,8 +41,12 @@ sudo chown -R centos:centos /home/centos/lightsail-cs-source/
 # set selinux permissions
 sudo chcon -Rt svirt_sandbox_file_t /home/centos
 
-# start docker containers
+# build docker containers
 cd /home/centos/lightsail-cs-source/
+/usr/local/bin/docker-compose build
+# set permissions
+sudo chown -R centos:centos /home/centos/lightsail-cs-source/
+# start docker containers
 /usr/local/bin/docker-compose up -d
 
 # reset ssh permissions
