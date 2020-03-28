@@ -20,8 +20,8 @@ git clone https://github.com/claesmathias/lightsail-cs-source.git
 
 # set docker-compose environment variables
 cat <<EOF >/home/centos/lightsail-cs-source/.env
-DUCKDNS_SUBDOMAINS=example.duckdns.org
-DUCKDNS_TOKEN=token
+DUCKDNS_SUBDOMAINS=subdomain.duckdns.org
+DUCKDNS_TOKEN=duck-dns-token
 RCON_PASSWORD=password
 CSS_HOSTNAME=hostname
 CSS_PASSWORD=password
