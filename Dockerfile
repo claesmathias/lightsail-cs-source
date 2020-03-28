@@ -23,6 +23,7 @@ ADD css.sh /usr/local/bin/css
 USER steam
 VOLUME /data/steam
 WORKDIR /data/steam
+RUN chown steam /data/steam
 
 # set entry point
 CMD ["css"]
