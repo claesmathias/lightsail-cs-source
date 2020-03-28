@@ -7,7 +7,6 @@ services:
     image: build: .
     restart: always
     environment:
-      - PORT=27015
       - MAP=${CSS_MAP}
       - MAXPLAYERS=${CSS_MAXPLAYERS}
     ports:
