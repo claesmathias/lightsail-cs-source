@@ -25,6 +25,13 @@ DUCKDNS_TOKEN=duck-dns-token
 TZ=Europe/Brussels
 EOF
 
+# set server variables
+cat <<EOF >/home/centos/lightsail-cs-source/server.cfg
+hostname "Counter-Strike Source Server"
+rcon_password "password"
+sv_password "password"
+EOF
+
 # set permissions
 sudo chown -R centos:centos /home/centos/lightsail-cs-source/
 
