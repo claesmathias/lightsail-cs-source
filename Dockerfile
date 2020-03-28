@@ -1,6 +1,9 @@
-FROM ubuntu:15.10
+FROM ubuntu:18.04
 MAINTAINER Mathias Claes
 
+# define default env variables
+ENV MAP de_dust2
+ENV MAXPLAYERS 16
 # Disable validation mode by default
 ENV CHECKFILES "false"
 
