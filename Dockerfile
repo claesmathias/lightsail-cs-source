@@ -7,7 +7,7 @@ ENV MAXPLAYERS 16
 
 # install dependencies
 RUN apt-get update && \
-    apt-get -qqy install lib32gcc1 curl
+    apt-get -qqy install lib32gcc1 curl unzip
 
 # create directories
 WORKDIR /root
