@@ -30,4 +30,4 @@ echo -e "\n\nUpdating CSS...\n"
 cd /data/steam/css/
 echo -e "\n\nLaunching CSS Server...\n"
 
-./srcds_run -game cstrike -secure +maxplayers $MAXPLAYERS +map $MAP $PORT
+./srcds_run -game cstrike -secure +maxplayers $MAXPLAYERS +map $MAP +exec server.cfg -port $PORT 
