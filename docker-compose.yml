@@ -4,7 +4,7 @@ services:
 
   css-server:
     container_name: css-server
-    image: bboehmke/cs-source:latest
+    image: build: .
     restart: always
     environment:
       - PORT=27015
