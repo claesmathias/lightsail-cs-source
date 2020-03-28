@@ -6,6 +6,10 @@ services:
     container_name: css-server
     image: bboehmke/cs-source:latest
     restart: always
+    environment:
+      - PORT=27015
+      - MAP=${CSS_MAP}
+      - MAXPLAYERS=${CSS_MAXPLAYERS}
     ports:
       - 27015:27015/udp
       - 27015:27015
@@ -15,7 +19,7 @@ services:
       - 26901:26901/udp
     volumes:
       - /home/centos/lightsail-cs-source/:/data/steam/
-#      - /home/centos/lightsail-cs-source/server.cfg:/data/steam/css/cstrike/cfg/server.cfg
+      - /home/centos/lightsail-cs-source/server.cfg:/data/steam/css/cstrike/cfg/server.cfg
 
   duckdns:
     image: linuxserver/duckdns
