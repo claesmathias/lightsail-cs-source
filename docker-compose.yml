@@ -4,12 +4,8 @@ services:
 
   css-server:
     container_name: css-server
-    image: foxylion/steam-css:latest
+    image: bboehmke/cs-source:latest
     restart: always
-    environment:
-      - RCON_PASSWORD=${RCON_PASSWORD}
-      - CSS_HOSTNAME=${CSS_HOSTNAME}
-      - CSS_PASSWORD=${CSS_PASSWORD}
     ports:
       - 27015:27015/udp
       - 27015:27015
@@ -18,10 +14,8 @@ services:
       - 27020:27020/udp
       - 26901:26901/udp
     volumes:
-      - /home/centos/lightsail-cs-source/htdocs:/home/steam/htdocs
-      - /home/centos/lightsail-cs-source/server.cfg:/home/steam/css/cstrike/cfg/my-server.cfg
-      - /home/centos/lightsail-cs-source/admins_simple.ini:/home/steam/css/cstrike/addons/sourcemod/configs/admins_simple.ini
-      - /home/centos/lightsail-cs-source/mapcycle.txt:/home/steam/css/cstrike/cfg/mapcycle.txt
+      - /home/centos/lightsail-cs-source/steam:/data/steam/
+      - /home/centos/lightsail-cs-source/server.cfg:/data/steam/css/cstrike/cfg/server.cfg
 
   duckdns:
     image: linuxserver/duckdns
